@@ -1,24 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-            
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- -------Own Link File---------- -->
+    <link rel="stylesheet" href="login-style.css">
+    <title>login Page</title>
 </head>
-<body>
-    <div class="Login_container">
 
-        <img src="images/Logo-1.png" alt="logo">
-        <header>Login</header>
-       <label for="email">Email<input id="email" name="email" type="email" required></label>
-       <label for="password">Password <input id="password" name="password" type="password" required></label>
-       <button type="submit">Login</button>
-       
+<body>
+    <div class="container col-4">
+        <div class="card">
+            <div class="card-body">
+                <img class="logo" src="BMLogo.svg" alt="BMLogo">
+                <h4 class="card-title">Sign In</h4>
+                <!-- -----------------BooStrap form----------------- -->
+
+                <form class="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter your email">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary login-btn">Sign In</button>
+                </form>
+            </div>
+        </div>
     </div>
+
+
 </body>
+
 </html>
